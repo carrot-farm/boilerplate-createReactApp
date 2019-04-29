@@ -77,6 +77,7 @@ export default handleActions(
       state.get("categories").map(item => {
         if (item._id === selectedId) {
           selected = item;
+          return item;
         }
       });
       return state.set("selectedCategoryInfo", selected);

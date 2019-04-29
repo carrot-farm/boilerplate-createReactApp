@@ -4,11 +4,9 @@ import TradeContainer from "containers/coninTrade/TradeContainer";
 
 const TradePage = ({ match }) => {
   return (
-    <div className="container">
-      <PageTemplate>
-        <TradeContainer />
-      </PageTemplate>
-    </div>
+    <PageTemplate>
+      <TradeContainer />
+    </PageTemplate>
   );
 };
 

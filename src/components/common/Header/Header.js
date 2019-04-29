@@ -9,8 +9,8 @@ import {
   List,
   ListItem,
   ListItemText
-} from "material-ui/core";
-import { Menu, Person, Add, Send } from "material-ui/icons";
+} from "@material-ui/core";
+import { Menu, Person, Add, Send } from "@material-ui/icons";
 import styles from "./Header.scss";
 import classNames from "classnames/bind";
 import HorizontalContainer from "containers/list/HorizontalContainer";
