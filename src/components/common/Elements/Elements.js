@@ -14,27 +14,27 @@ const Header = ({ children, className, ...args }) => (
 );
 
 // ===== container
-const Container = ({ children, ...args }) => {
+const Container = ({ children, className, ...args }) => {
   return (
-    <div className="el-container container" {...args}>
+    <div className={`el-container container ${className}`} {...args}>
       {children}
     </div>
   );
 };
 
 // ===== row
-const Row = ({ children, ...args }) => {
+const Row = ({ children, className, ...args }) => {
   return (
-    <div className={cx("el-row row")} {...args}>
+    <div className={cx(`el-row row ${className || ""}`)} {...args}>
       {children}
     </div>
   );
 };
 
 // ===== col
-const Col = ({ children, ...args }) => {
+const Col = ({ children, className, ...args }) => {
   return (
-    <div className={cx("el-col col")} {...args}>
+    <div className={cx(`el-col col ${className || ""}`)} {...args}>
       {children}
     </div>
   );
