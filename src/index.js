@@ -3,9 +3,10 @@ import ReactDOM from "react-dom";
 import Root from "./Root";
 import * as serviceWorker from "./serviceWorker";
 import "react-app-polyfill/ie9";
-import "lib/polyfill";
-import "styles/base.scss";
-import "styles/lib/materializecss.scss";
+
+import "./utils/polyfill";
+import "./styles/base.scss";
+// import "styles/lib/materializecss.scss";
 
 ReactDOM.render(<Root />, document.getElementById("root"));
 
