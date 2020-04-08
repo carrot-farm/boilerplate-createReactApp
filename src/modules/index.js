@@ -38,4 +38,6 @@ const makeStore = initialState => {
   return store;
 };
 
-export default makeStore;
+const makedStore = makeStore();
+
+export default makedStore;
